@@ -1,25 +1,64 @@
-import logo from './logo.svg';
+// // import logo from './logo.svg';
+import { Provider, useSelector } from 'react-redux';
 import './App.css';
+import { Body } from './Components/Body';
+import { Header } from './Components/Header';
+import appStore from './redux/appStore';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { MainContainer } from './Components/MainContainer';
+import { WatchPage } from './Components/WatchPage';
+import { SearchResults } from './Components/SearchResults';
+import { ChannelData } from './Components/ChannelData';
+import { Footer } from './Components/Footer';
+
+const appRouter = createBrowserRouter([{
+  path : "/",
+  element : <Body/>,
+  children: [
+    {
+      path : "/",
+      element : <MainContainer/>
+    },
+    {
+      path : "/",
+      element : <Header/>
+    },
+    // {
+    //   path : "/",
+    //   element : <Footer/>
+    // },
+    {
+      path : "watch",
+      element : <WatchPage/>
+    },
+    {
+      path : "/results",
+      element : <SearchResults/>
+    },
+    {
+      path : "/channel",
+      element : <ChannelData/>
+    }
+  ]
+}])
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+      <Provider store={appStore}>
+        <div>
+      <Header/>
+      <RouterProvider router={appRouter}/>
+      {/* <Footer/> */}
+      </div>
+      </Provider>
+    
   );
 }
 
 export default App;
+
+
+
+
