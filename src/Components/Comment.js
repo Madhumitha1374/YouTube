@@ -11,7 +11,7 @@ export const Comment = ({name, comment}) => {
                 <FontAwesomeIcon icon={faCircleUser} className='h-5 px-5 mt-1'/>
                 <h1 className='font-bold text-xl'>{name}</h1>
                 </div>
-                <p className='pl-16'>{comment} xdcftvgbhjnkmsdhfsuigfbvydfuahdj</p>
+                <p className='pl-16'>{comment}</p>
             </div>
 
             

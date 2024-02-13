@@ -6,7 +6,7 @@ export const NoInternet = () => {
             <img
             className='h-40'
             alt='error'
-            src='https://preview.redd.it/youtube-offline-astronaut-icon-upscaled-v0-8i3iza7hhd0b1.jpg?width=640&crop=smart&auto=webp&s=ff6acacfef223bf9d8bc2c7ff878b542fcacadca'/>
+            src='https://static.vecteezy.com/system/resources/previews/002/737/785/non_2x/no-internet-connection-illustration-concept-free-vector.jpg'/>
             <h1 className='text-lg font-bold'>Connect to the Internet</h1>
             <p>You're offline. Check your internet connection</p>
         </div>

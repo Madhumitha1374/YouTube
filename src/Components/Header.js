@@ -68,7 +68,6 @@ export const Header = () => {
             <div className='flex ml-7' onClick={() => window.location.href = "/"}>
             <img
                 className='h-[22px] cursor-pointer hidden border border-red-500 lg:inline-block rounded-l-lg rounded-r-lg'
-                
                 src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLTi2ub8_T_7xRaWF7ZU36P-8jSs9sP6TvGg&usqp=CAU"
                 alt="youtube-logo"/> 
                 <p className=' cursor-pointer text-[20px] mt-[-5px] h-8 font-bold font-[YouTube Sans Bold]'>Youtube</p>
